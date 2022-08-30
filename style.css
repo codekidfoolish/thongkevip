@@ -1,0 +1,293 @@
+:root {
+    --main-color: #ed1d27
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 135px;
+}
+.navigation ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color) ;
+    width: 100%;
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+.navigation ul li {
+    padding: 10px 25px;
+    font-size: 15px;
+}
+.navigation ul li:hover {
+    background-color: #44568c;
+}
+
+.counting {
+    display: flex;
+}
+
+.counting-left {
+    flex: 9;
+    height: 100%;
+    padding: 0 10px
+}
+.count-filter {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 30px 0;
+    width: 100%;
+}
+.count-filter h3 {
+    width: 100%; 
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 100;
+    padding: 7px 15px;
+    text-align: center;
+}
+
+.count-filter .select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+    width: 566px;
+}
+
+.count-filter button {
+    color: #fff;
+    background-color: #337ab7;
+    border:1px solid #2e6da4;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.count-filter button:hover {
+    background-color: #2e6ba0;
+}
+
+.count-filter textarea {
+    width: 70%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.count-filter .number {
+    margin-left:130px
+}
+
+.select label, .count-filter  label {
+    color:#000;
+    font-weight: 800;
+}
+
+.count-filter form {
+    display: flex;
+    margin: 10px 0;
+}
+.count-filter p {
+    margin: 20px 30px;
+    font-size: 17px;
+}
+.count-filter .highlight {
+    color: var(--main-color)
+}
+select {
+    padding:6px 12px;
+    margin:10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.count-title {
+    width: 100%; 
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 100;
+    padding: 7px 15px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.social {
+    background-color: rgb(50, 110, 212);
+    color:#fff;
+    padding: 5px;
+    margin: 18px 0 10px 10px;
+    border: none ;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.count-icon {
+    width: 12px;
+    height: 12px;
+}
+
+ #count-table {
+    border: 3px solid rgb(122, 120, 120);
+    width: 100%;
+    padding: 3px;
+    border-collapse: collapse;
+}
+#count-table th {
+    border:  1px solid #ccc;
+    color: #900;
+    background-color: #d9edf7;
+    padding: 3px;
+}
+#count-table td {
+    border:  1px solid #ccc;
+    text-align: center;
+    padding: 3px;
+}
+
+#count-table tr:hover {
+    background-color: rgb(212, 199, 17);
+}
+#count-table a {
+    text-decoration: none;
+    color: #00ff
+}
+
+.counting-right {
+    flex: 3;
+    margin-left: 10px;
+}
+
+ .count-title-r {
+    width: 100%;
+    background-color: var(--main-color);
+    color: #fff;
+    font-weight: 100;
+    padding: 7px 15px;
+    border-radius: 2px;
+    margin-top: 31px;
+}
+
+.count-table {
+    border-collapse: collapse;
+    padding: 2px 5px;
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.count-table td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+}
+
+.count-table a {
+    text-decoration: none;
+    color: #000;
+}
+.count-table a:hover {
+    color:var(--main-color)
+}
+
+.count-table  .highlight {
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.other {
+    border: 1px solid #ccc;
+    padding: 7px
+}
+.other a {
+    text-decoration: none;
+    color:#000;
+}
+.other ol  {
+    margin-left: 20px;
+}
+
+.other a:hover {
+    color: var(--main-color)
+}
+
+footer {
+    width: 100%;
+;
+}
+footer tbody{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.footer-table {
+    width: 100%;
+    text-align: left;
+
+}
+
+.footer-table thead th a {
+    color: #00cc;
+}
+
+.footer-table th {
+    text-decoration: none;
+    color: #000
+}
+.footer-table th a {
+    text-decoration: none;
+    color: #000;
+    font-weight:200;
+}
+.footer-table th a:hover {
+    color: var(--main-color)
+}
+.footer-table td {
+    border-top:1px solid #ccc
+}
+.footer-table td a  {
+    color: #900;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+.footer-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link .highlight {
+    color:var(--main-color);
+    font-weight: bold;
+}
+
+.scrolltotop {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ccc;
+    border-radius: 4px;
+    color:#900;
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right:60px
+}
+.scrolltotop:hover {
+    text-decoration: underline;
+}

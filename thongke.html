@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li>Xổ số hôm nay</li>
+                <li>Vietlot ▾</li>
+                <li>Sổ kết quả</li>
+                <li>Diễn đàn ▾</li>
+                <li>Thống kê VIP ▾</li>
+                <li>Soi cầu ▾</li>
+                <li>Thống kê nhanh ▾</li>
+                <li>Tiện ích ▾</li>
+            </ul>
+        </nav>
+        <div class="counting">
+            <div class="counting-left">
+                <div class="count-filter">
+                    <h3 class="count-title">Thống kê chu kỳ dài nhất bộ số không ra</h3>
+                    <form action="" class="select">
+                        <label for="city">Tỉnh</label>
+                        <select name=city>
+                            <option value="An Giang">An Giang</option>
+                            <option value="Bac Giang">Bac Giang</option>
+                            <option value="Bac Kan">Bac Kan</option>
+                            <option value="Bac Lieu">Bac Lieu</option>
+                            <option value="Bac Ninh">Bac Ninh</option>
+                            <option value="Ba Ria-Vung Tau">Ba Ria-Vung Tau</option>
+                            <option value="Ben Tre">Ben Tre</option>
+                            <option value="Binh Dinh">Binh Dinh</option>
+                            <option value="Binh Duong">Binh Duong</option>
+                            <option value="Binh Phuoc">Binh Phuoc</option>
+                            <option value="Binh Thuan">Binh Thuan</option>
+                            <option value="Ca Mau">Ca Mau</option>
+                            <option value="Cao Bang">Cao Bang</option>
+                            <option value="Dac Lak">Dac Lak</option>
+                            <option value="Dac Nong">Dac Nong</option>
+                            <option value="Dien Bien">Dien Bien</option>
+                            <option value="Dong Nai">Dong Nai</option>
+                            <option value="Dong Thap">Dong Thap</option>
+                            <option value="Gia Lai">Gia Lai</option>
+                            <option value="Ha Giang">Ha Giang</option>
+                            <option value="Hai Duong">Hai Duong</option>
+                            <option value="Ha Nam">Ha Nam</option>
+                            <option value="Ha Tay">Ha Tay</option>
+                            <option value="Ha Tinh">Ha Tinh</option>
+                            <option value="Hau Giang">Hau Giang</option>
+                            <option value="Hoa Binh">Hoa Binh</option>
+                            <option value="Hung Yen">Hung Yen</option>
+                            <option value="Khanh Hoa">Khanh Hoa</option>
+                            <option value="Kien Giang">Kien Giang</option>
+                            <option value="Kon Tum">Kon Tum</option>
+                            <option value="Lai Chau">Lai Chau</option>
+                            <option value="Lam Dong">Lam Dong</option>
+                            <option value="Lang Son">Lang Son</option>
+                            <option value="Lao Cai">Lao Cai</option>
+                            <option value="Long An">Long An</option>
+                            <option value="Nam Dinh">Nam Dinh</option>
+                            <option value="Nghe An">Nghe An</option>
+                            <option value="Ninh Binh">Ninh Binh</option>
+                            <option value="Ninh Thuan">Ninh Thuan</option>
+                            <option value="Phu Tho">Phu Tho</option>
+                            <option value="Phu Yen">Phu Yen</option>
+                            <option value="Quang Binh">Quang Binh</option>
+                            <option value="Quang Nam">Quang Nam</option>
+                            <option value="Quang Ngai">Quang Ngai</option>
+                            <option value="Quang Ninh">Quang Ninh</option>
+                            <option value="Quang Tri">Quang Tri</option>
+                            <option value="Soc Trang">Soc Trang</option>
+                            <option value="Son La">Son La</option>
+                            <option value="Tay Ninh">Tay Ninh</option>
+                            <option value="Thai Binh">Thai Binh</option>
+                            <option value="Thai Nguyen">Thai Nguyen</option>
+                            <option value="Thanh Hoa">Thanh Hoa</option>
+                            <option value="Thua Thien-Hue">Thua Thien-Hue</option>
+                            <option value="Tien Giang">Tien Giang</option>
+                            <option value="Tra Vinh">Tra Vinh</option>
+                            <option value="Tuyen Quang">Tuyen Quang</option>
+                            <option value="Vinh Long">Vinh Long</option>
+                            <option value="Vinh Phuc">Vinh Phuc</option>
+                            <option value="Yen Bai">Yen Bai</option>
+                            <option value="Can Tho">Can Tho</option>
+                            <option value="Da Nang">Da Nang</option>
+                            <option value="Hai Phong">Hai Phong</option>
+                            <option value="Hanoi">Hanoi</option>
+                            <option value="Ho Chi Minh">Ho Chi Minh</option>
+                        </select>
+                        <button>&rArr; Chọn tỉnh</button>
+                    </form>
+                    <form action="" class="number">
+                        <label for="number1">
+                            Bộ số
+                        </label>
+                        <textarea name="number1" id="number1" cols="10" rows="3"
+                            placeholder="Điền các bộ số bạn muốn xem (ngăn cách bằng dấu phấy hoặc cách. Để trống để xem mọi bộ số"></textarea>
+                    </form>
+                    <p><span class="highlight">Hướng dẫn:</span> B1 - Chọn tỉnh. => B2 - Chọn nhanh bộ số muốn xem (
+                        <span class="highlight">KHÔNG</span>
+                        cần bấm Enter). Bấm TRỢ GIÚP để xem thêm hướng dẫn.
+                    </p>
+                </div>
+                <div class="count-table">
+                    <h3 class="count-title">Thống kê chu kỳ Truyền Thống, tần suất xổ số, loto miền bắc, truyền thống,
+                        miền
+                        nam - KetQua.net</h3>
+                    <button class="social">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6 count-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                        </svg>
+                        Thích 19.8k</button>
+                    <button class="social">Chia sẽ</button>
+                    <table id="count-table">
+                        <thead>
+                            <tr>
+                                <th>Bộ số</th>
+                                <th>Chu kỳ dài nhất không về</th>
+                                <th>Khoảng thời gian của chu kỳ </th>
+                                <th>Ngày xuất hiện gần đây nhất</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                            <tr>
+                                <td><b>0</b></td>
+                                <td>19</td>
+                                <td>từ <a href="" class="link">10-07-2018</a> đến <a href="" class="link">08-08-2018</a>
+                                </td>
+                                <td><a href="" class="link">27-08-2022</a> (2 lượt quay trước)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="count-right">
+                <h3 class="count-title-r">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 count-icon">
+                        <path fill-rule="evenodd"
+                            d="M7.171 4.146l1.947 2.466a3.514 3.514 0 011.764 0l1.947-2.466a6.52 6.52 0 00-5.658 0zm8.683 3.025l-2.466 1.947c.15.578.15 1.186 0 1.764l2.466 1.947a6.52 6.52 0 000-5.658zm-3.025 8.683l-1.947-2.466c-.578.15-1.186.15-1.764 0l-1.947 2.466a6.52 6.52 0 005.658 0zM4.146 12.83l2.466-1.947a3.514 3.514 0 010-1.764L4.146 7.171a6.52 6.52 0 000 5.658zM5.63 3.297a8.01 8.01 0 018.738 0 8.031 8.031 0 012.334 2.334 8.01 8.01 0 010 8.738 8.033 8.033 0 01-2.334 2.334 8.01 8.01 0 01-8.738 0 8.032 8.032 0 01-2.334-2.334 8.01 8.01 0 010-8.738A8.03 8.03 0 015.63 3.297zm5.198 4.882a2.008 2.008 0 00-2.243.407 1.994 1.994 0 00-.407 2.243 1.993 1.993 0 00.992.992 2.008 2.008 0 002.243-.407c.176-.175.31-.374.407-.585a2.008 2.008 0 00-.407-2.243 1.993 1.993 0 00-.585-.407z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    Thống kê VIP
+                </h3>
+                <table class="count-table">
+                    <tr>
+                        <td><a href="" class="highlight">Thống kê chu kỳ loto</a></td>
+                        <td><a href="">Thống kê chu kỳ ĐB</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê tần suất nhịp loto</a></td>
+                        <td><a href="">Thống kê chu kỳ dàn đặc biệt</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê tần suất loto</a></td>
+                        <td><a href="">Thống kê chu kỳ dàn loto</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê tần suất cặp loto</a></td>
+                        <td><a href="">Thống kê chu kỳ max dàn cùng về</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê loto gan</a></td>
+                        <td><a href="">Bảng đặc biệt tuần</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê đầu đuôi loto</a></td>
+                        <td><a href="">Thống kê ĐB ngày mai</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Bảng đặc biệt năm</a></td>
+                        <td><a href="">Bảng đặc biệt tháng</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê tần suất loto theo Đặc Biệt</a></td>
+                        <td><a href="">Thống kê tần suất loto theo loto</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê giải nhất</a></td>
+                    </tr>
+                </table>
+                <h3 class="count-title-r">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 count-icon">
+                        <path
+                            d="M15.5 2A1.5 1.5 0 0014 3.5v13a1.5 1.5 0 001.5 1.5h1a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0016.5 2h-1zM9.5 6A1.5 1.5 0 008 7.5v9A1.5 1.5 0 009.5 18h1a1.5 1.5 0 001.5-1.5v-9A1.5 1.5 0 0010.5 6h-1zM3.5 10A1.5 1.5 0 002 11.5v5A1.5 1.5 0 003.5 18h1A1.5 1.5 0 006 16.5v-5A1.5 1.5 0 004.5 10h-1z" />
+                    </svg>
+
+                    Thống kê nhanh - Công cụ VIP
+                </h3>
+                <table class="count-table">
+                    <tr>
+                        <td><a href="">Thống kê nhanh</a></td>
+                        <td><a href=""> Thống kê theo tổng</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">TK tần suất bộ số</a></td>
+                        <td><a href=""> Thống kê quan trọng</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê tổng hợp</a></td>
+                        <td><a href="">Lô xiên tự động</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Thống kê theo ngày</a></td>
+                        <td><a href="">Cùng quay xổ số</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Công cụ gộp số VIP</a></td>
+                        <td><a href="">Công cụ tách số VIP</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Công cụ lọc ghép dàn VIP</a></td>
+                        <td><a href="">Tạo nhanh dàn đặc biệt</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Loại dàn đặc biệt</a></td>
+                        <td><a href="">Tạo dàn 3D 4D</a></td>
+                    </tr>
+                </table>
+                <h3 class="count-title-r">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 count-icon">
+                        <path
+                            d="M9 6a.75.75 0 01.75.75v1.5h1.5a.75.75 0 010 1.5h-1.5v1.5a.75.75 0 01-1.5 0v-1.5h-1.5a.75.75 0 010-1.5h1.5v-1.5A.75.75 0 019 6z" />
+                        <path fill-rule="evenodd"
+                            d="M2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9zm7-5.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11z"
+                            clip-rule="evenodd" />
+                    </svg>
+
+                    Soi cầu
+                </h3>
+                <table class="count-table">
+                    <tr>
+                        <td><a href="">Cầu loto</a></td>
+                        <td><a href="">Cầu loại loto</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Cầu loto bạch thủ</a></td>
+                        <td><a href=""> Cầu loại bạch thủ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Cầu giải đặc biệt</a></td>
+                        <td><a href="">Cầu ăn hai nháy</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Cầu theo thứ</a></td>
+                        <td><a href="">Cầu ĐB theo thứ</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Sổ mơ</a></td>
+                        <td><a href="">Lịch sử cầu loto</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Tạo phôi cầu tuần</a></td>
+                        <td><a href="">Tạo phôi xổ số</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Tổng hợp cầu</a></td>
+                    </tr>
+                </table>
+                <h3 class="count-title-r">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                        class="w-5 h-5 count-icon">
+                        <path
+                            d="M10 9a3 3 0 100-6 3 3 0 000 6zM6 8a2 2 0 11-4 0 2 2 0 014 0zM1.49 15.326a.78.78 0 01-.358-.442 3 3 0 014.308-3.516 6.484 6.484 0 00-1.905 3.959c-.023.222-.014.442.025.654a4.97 4.97 0 01-2.07-.655zM16.44 15.98a4.97 4.97 0 002.07-.654.78.78 0 00.357-.442 3 3 0 00-4.308-3.517 6.484 6.484 0 011.907 3.96 2.32 2.32 0 01-.026.654zM18 8a2 2 0 11-4 0 2 2 0 014 0zM5.304 16.19a.844.844 0 01-.277-.71 5 5 0 019.947 0 .843.843 0 01-.277.71A6.975 6.975 0 0110 18a6.974 6.974 0 01-4.696-1.81z" />
+                    </svg>
+
+                    Các chủ đề mới nhất trên diễn đàn
+                </h3>
+                <div class="other">
+                    <ol>
+                        <li><a href="">Siêu event: dự đoán xsmb - soi cầu hàng ngày - nhận thưởng liền tay</a></li>
+                        <li><a href="">Mở bát thứ ba 30/08/2022</a></li>
+                        <li><a href="">Xsmt-thứ 3 ngày 30/08/2022 - quảng nam-đắc lăc</a></li>
+                        <li><a href="">Xsmn thứ 3 ngày 30/08/2022:bến tre, vũng tàu, bạc liêu</a></li>
+                        <li><a href="">Thảo luận, dự đoán xsmb thứ 3 ngày 30/8/2022</a></li>
+                        <li><a href="">Cầu lotto_ đặc biệt 2d 3d 4d thứ ba 30/08/2022</a></li>
+                        <li><a href="">Cầu lotto đặc biệt tuần 36 ( từ 29/08 đến 04/09/2022)</a></li>
+                        <li><a href="">Thảo luận, dự đoán xsmb thứ 2 ngày 29/8/2022</a></li>
+                        <li><a href="">Xsmn thứ 2 ngày 29/08/2022: hcm, đồng tháp, cà mau</a></li>
+                        <li><a href="">Xsmt-thứ 2 ngày 29/08/2022 - phú yên-thừa thiên huế</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <table class="footer-table">
+
+                <thead>
+                    <tr>
+                        <th>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 footer-icon">
+                                <path fill-rule="evenodd"
+                                    d="M2.106 6.447A2 2 0 001 8.237V16a2 2 0 002 2h14a2 2 0 002-2V8.236a2 2 0 00-1.106-1.789l-7-3.5a2 2 0 00-1.788 0l-7 3.5zm1.48 4.007a.75.75 0 00-.671 1.342l5.855 2.928a2.75 2.75 0 002.46 0l5.852-2.926a.75.75 0 10-.67-1.342l-5.853 2.926a1.25 1.25 0 01-1.118 0l-5.856-2.928z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Email:
+                            <a href="">adm.ketqua.net@gmail.com</a>
+                        </th>
+                        <th>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                class="w-5 h-5 footer-icon ">
+                                <path
+                                    d="M10.75 10.818v2.614A3.13 3.13 0 0011.888 13c.482-.315.612-.648.612-.875 0-.227-.13-.56-.612-.875a3.13 3.13 0 00-1.138-.432zM8.33 8.62c.053.055.115.11.184.164.208.16.46.284.736.363V6.603a2.45 2.45 0 00-.35.13c-.14.065-.27.143-.386.233-.377.292-.514.627-.514.909 0 .184.058.39.202.592.037.051.08.102.128.152z" />
+                                <path fill-rule="evenodd"
+                                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-6a.75.75 0 01.75.75v.316a3.78 3.78 0 011.653.713c.426.33.744.74.925 1.2a.75.75 0 01-1.395.55 1.35 1.35 0 00-.447-.563 2.187 2.187 0 00-.736-.363V9.3c.698.093 1.383.32 1.959.696.787.514 1.29 1.27 1.29 2.13 0 .86-.504 1.616-1.29 2.13-.576.377-1.261.603-1.96.696v.299a.75.75 0 11-1.5 0v-.3c-.697-.092-1.382-.318-1.958-.695-.482-.315-.857-.717-1.078-1.188a.75.75 0 111.359-.636c.08.173.245.376.54.569.313.205.706.353 1.138.432v-2.748a3.782 3.782 0 01-1.653-.713C6.9 9.433 6.5 8.681 6.5 7.875c0-.805.4-1.558 1.097-2.096a3.78 3.78 0 011.653-.713V4.75A.75.75 0 0110 4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            Skype:<a href="">ketqua.net
+                            </a>
+                        </th>
+                        <th><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    class="w-5 h-5 footer-icon">
+                                    <path fill-rule="evenodd"
+                                        d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+
+                                Liên hệ quảng cáo
+                            </a></th>
+                        <th><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="w-6 h-6 footer-icon">
+                                    <path d="M12 7.5a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+                                    <path fill-rule="evenodd"
+                                        d="M1.5 4.875C1.5 3.839 2.34 3 3.375 3h17.25c1.035 0 1.875.84 1.875 1.875v9.75c0 1.036-.84 1.875-1.875 1.875H3.375A1.875 1.875 0 011.5 14.625v-9.75zM8.25 9.75a3.75 3.75 0 117.5 0 3.75 3.75 0 01-7.5 0zM18.75 9a.75.75 0 00-.75.75v.008c0 .414.336.75.75.75h.008a.75.75 0 00.75-.75V9.75a.75.75 0 00-.75-.75h-.008zM4.5 9.75A.75.75 0 015.25 9h.008a.75.75 0 01.75.75v.008a.75.75 0 01-.75.75H5.25a.75.75 0 01-.75-.75V9.75z"
+                                        clip-rule="evenodd" />
+                                    <path
+                                        d="M2.25 18a.75.75 0 000 1.5c5.4 0 10.63.722 15.6 2.075 1.19.324 2.4-.558 2.4-1.82V18.75a.75.75 0 00-.75-.75H2.25z" />
+                                </svg>
+
+                                Xổ số Vietlott
+                            </a></th>
+                    </tr>
+                </thead>
+                <hr>
+                <tbody>
+                    <tr class="footer-title">
+                        <td> <a href="">Kết quả xổ số</a></td>
+                        <td> <a href="">Thống kê VIP</a></td>
+                        <td> <a href="">Soi cầu </a></td>
+                        <td> <a href="">Thống kê nhanh</a></td>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Sổ xố miền Bắc</a></th>
+                        <th> <a href="">Thống kê chu kỳ</a></th>
+                        <th> <a href="">Soi cầu loto </a></th>
+                        <th> <a href="">Thống kê nhanh</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Sổ xố miền Trung</a></th>
+                        <th> <a href="">Tần số nhịp loto</a></th>
+                        <th> <a href="">Soi cầu loại loto </a></th>
+                        <th> <a href="">Thống kê tần suất bộ số</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Sổ xố miền Nam</a></th>
+                        <th> <a href="">Tần suất loto</a></th>
+                        <th> <a href="">Soi cầu loto Bạch Thủ </a></th>
+                        <th> <a href="">Thống kê tổng hợp</a></th>
+                    </tr>
+                    <tr>
+                        <td> <a href="" class="footer-title">Tiện ích mở rộng</a></td>
+                        <th> <a href="">Tần suất cặp loto</a></th>
+                        <th> <a href="">Soi cầu loại Bạch Thủ</a></th>
+                        <th> <a href="">Thống kê theo ngày</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Cùng quay xổ số</a></th>
+                        <th> <a href="">Thống kê loto Gan</a></th>
+                        <th> <a href="">Soi cầu giải Đặc biệt </a></th>
+                        <th> <a href="">Thống kê theo tổng</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Ghép lô xiên tự động</a></th>
+                        <th> <a href="">Thống kê đầu đuôi</a></th>
+                        <th> <a href="">Soi cầu ăn 2 nháy </a></th>
+                        <th> <a href="">Thống kê quan trọng</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">sổ mơ - giải mộng</a></th>
+                        <th> <a href="">Bảng đặc biệt năm</a></th>
+                        <th> <a href="">Soi cầu theo thứ tự</a></th>
+                        <th> <a href="">Công cụ gộp số VIP</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Dò vé xổ số</a></th>
+                        <th> <a href="">Thống kê chu kỳ ĐB</a></th>
+                        <th> <a href="">Soi cầu ĐB theo thứ </a></th>
+                        <th> <a href="">Công cụ tách số VIP</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Lịch quay thưởng</a></th>
+                        <th> <a href="">Thống kê chu kì dàn ĐB</a></th>
+                        <th> <a href="">Kiểm tra lịch sử cầu</a></th>
+                        <th> <a href="">Công cụ lọc - ghép dàn số VIP</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Tạo Widget ketqua.net</a></th>
+                        <th> <a href="">Thống kê chu kì dàn loto</a></th>
+                        <th></th>
+                        <th> <a href="">Tạo nhanh dàn ĐB</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Lịch và kết quả Bóng đá</a></th>
+                        <th> <a href="">Max dàn cùng về</a></th>
+                        <th></th>
+                        <th> <a href="">Loại dàn đặc biệt</a></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Chia sẻ liên kết</a></th>
+                        <th> <a href="">Bảng đặc biệt tuần</a></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th> <a href="">Về ketqua.net</a></th>
+                        <th> <a href="">Giải biệt ngày mai</a></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <div class="footer-link">
+                <p><span class="highlight">Ketqua.net</span>- Trang kết quả xổ số hàng đầu Việt Nam!</p>
+                <p> &copy; Copyright ketqua.net - 2017</p>
+            </div>
+        </footer>
+    </div>
+    <div class="scrolltotop"> &#9650; </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.scrolltotop').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 1000)
+            })
+        })
+    </script>
+</body>
+
+</html>
